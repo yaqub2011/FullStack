@@ -27,6 +27,6 @@
 //
 //int main() {
 //    int arr[] = { 12, 143, 5, 0, 23, 45, 233, 10, 7 };
-//    int size = 9;
-//    Test2(arr, size);
+//    int massive = 9;
+//    Test2(arr, massive);
 //}
