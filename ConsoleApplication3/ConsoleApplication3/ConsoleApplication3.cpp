@@ -1,20 +1,32 @@
-// ConsoleApplication3.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//#include <iostream>
 //
-
-#include <iostream>
-
-int main()
-{
-    std::cout << "Hello World!\n";
-}
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+//using namespace std;
+//
+//void Even(int numbers[], int Aftondil) {
+//    int a = 0;
+//    while (a < Aftondil) {
+//        if (numbers[a] % 2 == 0) {
+//            cout << numbers[a] << endl;
+//        }
+//        a++;
+//    }
+//}
+//int main() {
+//    int arr[] = { 12, 143, 5, 0, 23, 45, 233, 10, 7 };
+//    Even(arr, 9);
+//}
+//void Test2(int num[], int Aftondil) {
+//    int sum = 0;
+//    int i = 0;
+//    while (i < Aftondil) {
+//        sum += num[i];
+//        i++;
+//    }
+//    cout << "Sum: " << sum << endl;
+//}
+//
+//int main() {
+//    int arr[] = { 12, 143, 5, 0, 23, 45, 233, 10, 7 };
+//    int size = 9;
+//    Test2(arr, size);
+//}
