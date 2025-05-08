@@ -27,9 +27,14 @@ int main()
     arr1[7][2] = 1;
 
    
-    arr2[1][1] = 1; arr2[1][2] = 1; arr2[1][3] = 1; 
-    arr2[4][4] = 1; arr2[5][4] = 1; arr2[6][4] = 1; 
-    arr2[8][7] = 1; arr2[8][8] = 1; 
+    arr2[1][1] = 1;
+    arr2[1][2] = 1;
+    arr2[1][3] = 1; 
+    arr2[4][4] = 1;
+    arr2[5][4] = 1;
+    arr2[6][4] = 1; 
+    arr2[8][7] = 1;
+    arr2[8][8] = 1; 
 
    
     while (true)
@@ -62,14 +67,14 @@ int main()
 
        
         cout << "Enter x, y = ";
-        int attackRow, attackCol;
-        cin >> attackRow >> attackCol;
+        int X, Y;
+        cin >> X >> Y;
 
         
-        if (arr2[attackRow][attackCol] == 1)
+        if (arr2[X][Y] == 1)
         {
             cout << "Correct" << endl;
-            arr2[attackRow][attackCol] = -1; 
+            arr2[X][Y] = -1; 
         }
         else
         {
@@ -77,30 +82,30 @@ int main()
         }
 
         
-        bool allShipsSunk = true;
+        bool ShipsGone = true;
         for (int i = 0; i < 10; i++)
         {
             for (int j = 0; j < 10; j++)
             {
                 if (arr2[i][j] == 1)
                 {
-                    allShipsSunk = false;
+                    ShipsGone = false;
                     break;
                 }
             }
-            if (!allShipsSunk) break;
+            if (!ShipsGone) break;
         }
 
-        if (allShipsSunk)
+        if (ShipsGone)
         {
             cout << "You win!" << endl;
             break;
         }
 
         
-        cout << "Press any key to continue..." << endl;
+        cout << "Press any key..." << endl;
         _getch();
     }
 
-    return 0;
+    
 }
