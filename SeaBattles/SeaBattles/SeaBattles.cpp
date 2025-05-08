@@ -61,19 +61,19 @@ int main()
         }
 
        
-        cout << "Enter attack coordinates (row, column) to attack the opponent's ships (0-9): ";
+        cout << "Enter x, y = ";
         int attackRow, attackCol;
         cin >> attackRow >> attackCol;
 
         
         if (arr2[attackRow][attackCol] == 1)
         {
-            cout << "Hit!" << endl;
+            cout << "Correct" << endl;
             arr2[attackRow][attackCol] = -1; 
         }
         else
         {
-            cout << "Miss!" << endl;
+            cout << "Dodged" << endl;
         }
 
         
@@ -93,7 +93,7 @@ int main()
 
         if (allShipsSunk)
         {
-            cout << "You won! All ships are sunk!" << endl;
+            cout << "You win!" << endl;
             break;
         }
 
